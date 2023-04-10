@@ -1,0 +1,279 @@
+                         Chronologic VCS (TM)
+            Version R-2020.12 -- Tue Dec  6 18:47:59 2022
+               Copyright (c) 1991-2020 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+The design hasn't changed and need not be recompiled. 
+If you really want to, delete file simv.daidir/.vcs.timestamp and
+run VCS again.
+
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12; Runtime version R-2020.12;  Dec  6 18:47 2022
+UVM_INFO /home/016720418@SJSUAD.SJSU.EDU/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test write_after_write_test...
+UVM_INFO /home/016720418@SJSUAD.SJSU.EDU/uvm-1.2/src/base/uvm_root.svh(579) @ 0: reporter [UVMTOP] UVM testbench topology:
+------------------------------------------------------------------
+Name                       Type                        Size  Value
+------------------------------------------------------------------
+uvm_test_top               write_after_write_test      -     @353 
+  env_h                    env                         -     @366 
+    sl_agent_h             I2C_agent                   -     @412 
+      I2C_mon_h            I2C_monitor                 -     @434 
+        mon_aport          uvm_analysis_port           -     @620 
+      i2c_dri_h            I2C_sl_dri                  -     @580 
+        rsp_port           uvm_analysis_port           -     @599 
+        seq_item_port      uvm_seq_item_pull_port      -     @589 
+      i2c_sequencer_h      uvm_sequencer               -     @443 
+        rsp_export         uvm_analysis_export         -     @452 
+        seq_item_export    uvm_seq_item_pull_imp       -     @570 
+        arbitration_queue  array                       0     -    
+        lock_queue         array                       0     -    
+        num_last_reqs      integral                    32    'd1  
+        num_last_rsps      integral                    32    'd1  
+      ms_aport             uvm_analysis_port           -     @609 
+    uart_sl_agt_h          UART_agent                  -     @421 
+      uart_drv_h           UART_driver                 -     @668 
+        rsp_port           uvm_analysis_port           -     @687 
+        seq_item_port      uvm_seq_item_pull_port      -     @677 
+      uart_mon_h           UART_monitor                -     @639 
+        rx_monitor_port    uvm_analysis_port           -     @658 
+        tx_monitor_port    uvm_analysis_port           -     @648 
+      uart_sequencer_h     uvm_sequencer               -     @697 
+        rsp_export         uvm_analysis_export         -     @706 
+        seq_item_export    uvm_seq_item_pull_imp       -     @824 
+        arbitration_queue  array                       0     -    
+        lock_queue         array                       0     -    
+        num_last_reqs      integral                    32    'd1  
+        num_last_rsps      integral                    32    'd1  
+  scb_h                    scb                         -     @376 
+    I2C_mon_fifo           uvm_tlm_analysis_fifo #(T)  -     @872 
+      analysis_export      uvm_analysis_imp            -     @921 
+      get_ap               uvm_analysis_port           -     @911 
+      get_peek_export      uvm_get_peek_imp            -     @891 
+      put_ap               uvm_analysis_port           -     @901 
+      put_export           uvm_put_imp                 -     @881 
+    I2C_mon_in             uvm_analysis_export         -     @842 
+    UART_rx_fifo           uvm_tlm_analysis_fifo #(T)  -     @990 
+      analysis_export      uvm_analysis_imp            -     @1039
+      get_ap               uvm_analysis_port           -     @1029
+      get_peek_export      uvm_get_peek_imp            -     @1009
+      put_ap               uvm_analysis_port           -     @1019
+      put_export           uvm_put_imp                 -     @999 
+    UART_rx_in             uvm_analysis_export         -     @862 
+    UART_tx_fifo           uvm_tlm_analysis_fifo #(T)  -     @931 
+      analysis_export      uvm_analysis_imp            -     @980 
+      get_ap               uvm_analysis_port           -     @970 
+      get_peek_export      uvm_get_peek_imp            -     @950 
+      put_ap               uvm_analysis_port           -     @960 
+      put_export           uvm_put_imp                 -     @940 
+    UART_tx_in             uvm_analysis_export         -     @852 
+------------------------------------------------------------------
+
+Start Bit Detected .. 1562500/ top.top_design.d2.func_rx/ L24
+Data Received: 53 .. 10937490/ top.top_design.d2.func_rx/ L37
+UVM_INFO ../testbench/scoreboard/scoreboard.sv(110) @ 11000000: uvm_test_top.scb_h [SCB] uart_tx_tr=-------------------------------------
+Name       Type           Size  Value
+-------------------------------------
+data_sent  UART_seq_item  -     @1128
+  data     integral       8     'h53 
+-------------------------------------
+
+Start Bit Detected .. 14062490/ top.top_design.d2.func_rx/ L24
+Data Received: 82 .. 23437490/ top.top_design.d2.func_rx/ L37
+UVM_INFO ../testbench/scoreboard/scoreboard.sv(110) @ 23000000: uvm_test_top.scb_h [SCB] uart_tx_tr=-------------------------------------
+Name       Type           Size  Value
+-------------------------------------
+data_sent  UART_seq_item  -     @1132
+  data     integral       8     'h82 
+-------------------------------------
+
+Start Bit Detected .. 26562480/ top.top_design.d2.func_rx/ L24
+Data Received: 2 .. 35937480/ top.top_design.d2.func_rx/ L37
+Number of Bytes: 2
+UVM_INFO ../testbench/scoreboard/scoreboard.sv(110) @ 36000000: uvm_test_top.scb_h [SCB] uart_tx_tr=-------------------------------------
+Name       Type           Size  Value
+-------------------------------------
+data_sent  UART_seq_item  -     @1144
+  data     integral       8     'h2  
+-------------------------------------
+
+Start Bit Detected .. 39062480/ top.top_design.d2.func_rx/ L24
+Data Received: 55 .. 48437470/ top.top_design.d2.func_rx/ L37
+Written Data: 55
+UVM_INFO ../testbench/scoreboard/scoreboard.sv(110) @ 48000000: uvm_test_top.scb_h [SCB] uart_tx_tr=-------------------------------------
+Name       Type           Size  Value
+-------------------------------------
+data_sent  UART_seq_item  -     @1155
+  data     integral       8     'h55 
+-------------------------------------
+
+Start Bit Detected .. 51562470/ top.top_design.d2.func_rx/ L24
+Data Received: 4e .. 60937460/ top.top_design.d2.func_rx/ L37
+Written Data: 4e
+UVM_INFO ../testbench/scoreboard/scoreboard.sv(110) @ 61000000: uvm_test_top.scb_h [SCB] uart_tx_tr=-------------------------------------
+Name       Type           Size  Value
+-------------------------------------
+data_sent  UART_seq_item  -     @1166
+  data     integral       8     'h4e 
+-------------------------------------
+
+Start Bit Detected .. 64062460/ top.top_design.d2.func_rx/ L24
+Data Received: 53 .. 73437450/ top.top_design.d2.func_rx/ L37
+UVM_INFO ../testbench/scoreboard/scoreboard.sv(110) @ 73000000: uvm_test_top.scb_h [SCB] uart_tx_tr=-------------------------------------
+Name       Type           Size  Value
+-------------------------------------
+data_sent  UART_seq_item  -     @1177
+  data     integral       8     'h53 
+-------------------------------------
+
+Start Bit Detected .. 76562450/ top.top_design.d2.func_rx/ L24
+Data Received: 82 .. 85937450/ top.top_design.d2.func_rx/ L37
+UVM_INFO ../testbench/scoreboard/scoreboard.sv(110) @ 86000000: uvm_test_top.scb_h [SCB] uart_tx_tr=-------------------------------------
+Name       Type           Size  Value
+-------------------------------------
+data_sent  UART_seq_item  -     @1188
+  data     integral       8     'h82 
+-------------------------------------
+
+Start Bit Detected .. 89062440/ top.top_design.d2.func_rx/ L24
+Data Received: 2 .. 98437440/ top.top_design.d2.func_rx/ L37
+Number of Bytes: 2
+UVM_INFO ../testbench/scoreboard/scoreboard.sv(110) @ 98000000: uvm_test_top.scb_h [SCB] uart_tx_tr=-------------------------------------
+Name       Type           Size  Value
+-------------------------------------
+data_sent  UART_seq_item  -     @1199
+  data     integral       8     'h2  
+-------------------------------------
+
+Start Bit Detected .. 101562440/ top.top_design.d2.func_rx/ L24
+Data Received: 66 .. 110937430/ top.top_design.d2.func_rx/ L37
+Written Data: 66
+UVM_INFO ../testbench/scoreboard/scoreboard.sv(110) @ 111000000: uvm_test_top.scb_h [SCB] uart_tx_tr=-------------------------------------
+Name       Type           Size  Value
+-------------------------------------
+data_sent  UART_seq_item  -     @1210
+  data     integral       8     'h66 
+-------------------------------------
+
+Start Bit Detected .. 114062430/ top.top_design.d2.func_rx/ L24
+Data Received: 44 .. 123437420/ top.top_design.d2.func_rx/ L37
+Written Data: 44
+UVM_INFO ../testbench/scoreboard/scoreboard.sv(110) @ 123000000: uvm_test_top.scb_h [SCB] uart_tx_tr=-------------------------------------
+Name       Type           Size  Value
+-------------------------------------
+data_sent  UART_seq_item  -     @1221
+  data     integral       8     'h44 
+-------------------------------------
+
+Start Bit Detected .. 126562420/ top.top_design.d2.func_rx/ L24
+Data Received: 50 .. 135937410/ top.top_design.d2.func_rx/ L37
+UVM_INFO ../testbench/scoreboard/scoreboard.sv(110) @ 136000000: uvm_test_top.scb_h [SCB] uart_tx_tr=-------------------------------------
+Name       Type           Size  Value
+-------------------------------------
+data_sent  UART_seq_item  -     @1232
+  data     integral       8     'h50 
+-------------------------------------
+
+UVM_INFO ../testbench/bfm/I2C_bfm.sv(322) @ 136000000: reporter [I2C_SL_DRI[0]] start condition detected
+UVM_INFO ../testbench/bfm/I2C_bfm.sv(103) @ 136000000: reporter [I2C_SL_DRI[0]] inside first byte check task
+UVM_INFO ../testbench/bfm/I2C_mon_bfm.sv(78) @ 136000000: reporter [I2C_MON] start condition detected
+UVM_INFO ../testbench/bfm/I2C_mon_bfm.sv(382) @ 136000000: reporter [I2C_MON] inside main task
+UVM_INFO ../testbench/bfm/I2C_mon_bfm.sv(390) @ 136000000: reporter [I2C_MON] forking first byte task
+UVM_INFO ../testbench/bfm/I2C_mon_bfm.sv(266) @ 136000000: reporter [I2C_MON] inside first byte check task
+UVM_INFO ../testbench/bfm/I2C_bfm.sv(112) @ 136000000: reporter [I2C_SL_DRI[0]] address matched
+UVM_INFO ../testbench/bfm/I2C_mon_bfm.sv(310) @ 136000000: reporter [I2C_MON] first byte detected as 7 bit addr
+UVM_INFO ../testbench/bfm/I2C_bfm.sv(116) @ 136000000: reporter [I2C_SL_DRI[0]] giving ACK
+UVM_INFO ../testbench/bfm/I2C_mon_bfm.sv(124) @ 136000000: reporter [I2C_MON] got ACK for 7 bit addr
+UVM_INFO ../testbench/bfm/I2C_bfm.sv(124) @ 136000000: reporter [I2C_SL_DRI[0]] Calling Slave RX task
+UVM_INFO ../testbench/bfm/I2C_bfm.sv(212) @ 136000000: reporter [I2C_SL_DRI[0]] inside RX mode task
+UVM_INFO ../testbench/bfm/I2C_mon_bfm.sv(382) @ 137000000: reporter [I2C_MON] inside main task
+UVM_INFO ../testbench/bfm/I2C_mon_bfm.sv(386) @ 137000000: reporter [I2C_MON] waiting for START
+UVM_INFO ../testbench/scoreboard/scoreboard.sv(130) @ 137000000: uvm_test_top.scb_h [SCB] i2c_mon_tr=-------------------------------------------------
+Name               Type          Size  Value     
+-------------------------------------------------
+seq_item_h         I2C_seq_item  -     @1255     
+  sm_e             speed_mode    32    SM        
+  op_e             operation     32    ADDR_7_BIT
+  R_W_mode         integral      1     'h0       
+  no_of_data_byte  integral      32    'h2       
+  data_q           da(integral)  2     -         
+    [0]            integral      8     'h55      
+    [1]            integral      8     'h4e      
+  address          integral      10    'h41      
+  ack_nack_q       da(integral)  3     -         
+    [0]            integral      1     'h0       
+    [1]            integral      1     'h0       
+    [2]            integral      1     'h0       
+-------------------------------------------------
+
+UVM_INFO ../testbench/scoreboard/scoreboard.sv(157) @ 137000000: uvm_test_top.scb_h [CMP_PASS] received addr and i2c packet addr matching which is 41
+UVM_INFO ../testbench/scoreboard/scoreboard.sv(162) @ 137000000: uvm_test_top.scb_h [CMP_PASS] received addr and i2c packet addr matching which is 0
+UVM_INFO ../testbench/scoreboard/scoreboard.sv(169) @ 137000000: uvm_test_top.scb_h [CMP_PASS] received data and i2c packet data matching which is 55
+UVM_INFO ../testbench/scoreboard/scoreboard.sv(169) @ 137000000: uvm_test_top.scb_h [CMP_PASS] received data and i2c packet data matching which is 4e
+UVM_INFO ../testbench/bfm/I2C_bfm.sv(103) @ 137000000: reporter [I2C_SL_DRI[0]] inside first byte check task
+UVM_INFO ../testbench/bfm/I2C_mon_bfm.sv(78) @ 137000000: reporter [I2C_MON] start condition detected
+UVM_INFO ../testbench/bfm/I2C_mon_bfm.sv(390) @ 137000000: reporter [I2C_MON] forking first byte task
+UVM_INFO ../testbench/bfm/I2C_mon_bfm.sv(266) @ 137000000: reporter [I2C_MON] inside first byte check task
+UVM_INFO ../testbench/bfm/I2C_bfm.sv(112) @ 137000000: reporter [I2C_SL_DRI[0]] address matched
+UVM_INFO ../testbench/bfm/I2C_mon_bfm.sv(310) @ 137000000: reporter [I2C_MON] first byte detected as 7 bit addr
+UVM_INFO ../testbench/bfm/I2C_bfm.sv(116) @ 137000000: reporter [I2C_SL_DRI[0]] giving ACK
+UVM_INFO ../testbench/bfm/I2C_mon_bfm.sv(124) @ 138000000: reporter [I2C_MON] got ACK for 7 bit addr
+UVM_INFO ../testbench/bfm/I2C_bfm.sv(124) @ 138000000: reporter [I2C_SL_DRI[0]] Calling Slave RX task
+UVM_INFO ../testbench/bfm/I2C_bfm.sv(212) @ 138000000: reporter [I2C_SL_DRI[0]] inside RX mode task
+UVM_INFO ../testbench/bfm/I2C_mon_bfm.sv(382) @ 138000000: reporter [I2C_MON] inside main task
+UVM_INFO ../testbench/bfm/I2C_mon_bfm.sv(386) @ 138000000: reporter [I2C_MON] waiting for START
+UVM_INFO ../testbench/scoreboard/scoreboard.sv(200) @ 138000000: uvm_test_top.scb_h [CMP_PASS] received addr and i2c packet addr matching which is 41
+UVM_INFO ../testbench/scoreboard/scoreboard.sv(205) @ 138000000: uvm_test_top.scb_h [CMP_PASS] received addr and i2c packet addr matching which is 0
+UVM_INFO ../testbench/scoreboard/scoreboard.sv(212) @ 138000000: uvm_test_top.scb_h [CMP_PASS] received data and i2c packet data matching which is 66
+UVM_INFO ../testbench/scoreboard/scoreboard.sv(212) @ 138000000: uvm_test_top.scb_h [CMP_PASS] received data and i2c packet data matching which is 44
+UVM_INFO /home/016720418@SJSUAD.SJSU.EDU/uvm-1.2/src/base/uvm_objection.svh(1270) @ 138000000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO /home/016720418@SJSUAD.SJSU.EDU/uvm-1.2/src/base/uvm_report_server.svh(847) @ 138000000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   50
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[CMP_PASS]     8
+[I2C_MON]    15
+[I2C_SL_DRI[0]]    11
+[RNTST]     1
+[SCB]    12
+[TEST_DONE]     1
+[UVM/RELNOTES]     1
+[UVMTOP]     1
+
+$finish called from file "/home/016720418@SJSUAD.SJSU.EDU/uvm-1.2/src/base/uvm_root.svh", line 517.
+$finish at simulation time            138255000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 138255000 ps
+CPU Time:      0.400 seconds;       Data structure size:   0.2Mb
+Tue Dec  6 18:47:59 2022

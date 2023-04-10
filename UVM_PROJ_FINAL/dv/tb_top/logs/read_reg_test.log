@@ -1,0 +1,205 @@
+                         Chronologic VCS (TM)
+            Version R-2020.12 -- Tue Dec  6 18:44:12 2022
+               Copyright (c) 1991-2020 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+The design hasn't changed and need not be recompiled. 
+If you really want to, delete file simv.daidir/.vcs.timestamp and
+run VCS again.
+
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12; Runtime version R-2020.12;  Dec  6 18:44 2022
+UVM_INFO /home/016720418@SJSUAD.SJSU.EDU/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test read_reg_test...
+UVM_INFO /home/016720418@SJSUAD.SJSU.EDU/uvm-1.2/src/base/uvm_root.svh(579) @ 0: reporter [UVMTOP] UVM testbench topology:
+------------------------------------------------------------------
+Name                       Type                        Size  Value
+------------------------------------------------------------------
+uvm_test_top               read_reg_test               -     @353 
+  env_h                    env                         -     @366 
+    sl_agent_h             I2C_agent                   -     @412 
+      I2C_mon_h            I2C_monitor                 -     @434 
+        mon_aport          uvm_analysis_port           -     @620 
+      i2c_dri_h            I2C_sl_dri                  -     @580 
+        rsp_port           uvm_analysis_port           -     @599 
+        seq_item_port      uvm_seq_item_pull_port      -     @589 
+      i2c_sequencer_h      uvm_sequencer               -     @443 
+        rsp_export         uvm_analysis_export         -     @452 
+        seq_item_export    uvm_seq_item_pull_imp       -     @570 
+        arbitration_queue  array                       0     -    
+        lock_queue         array                       0     -    
+        num_last_reqs      integral                    32    'd1  
+        num_last_rsps      integral                    32    'd1  
+      ms_aport             uvm_analysis_port           -     @609 
+    uart_sl_agt_h          UART_agent                  -     @421 
+      uart_drv_h           UART_driver                 -     @668 
+        rsp_port           uvm_analysis_port           -     @687 
+        seq_item_port      uvm_seq_item_pull_port      -     @677 
+      uart_mon_h           UART_monitor                -     @639 
+        rx_monitor_port    uvm_analysis_port           -     @658 
+        tx_monitor_port    uvm_analysis_port           -     @648 
+      uart_sequencer_h     uvm_sequencer               -     @697 
+        rsp_export         uvm_analysis_export         -     @706 
+        seq_item_export    uvm_seq_item_pull_imp       -     @824 
+        arbitration_queue  array                       0     -    
+        lock_queue         array                       0     -    
+        num_last_reqs      integral                    32    'd1  
+        num_last_rsps      integral                    32    'd1  
+  scb_h                    scb                         -     @376 
+    I2C_mon_fifo           uvm_tlm_analysis_fifo #(T)  -     @872 
+      analysis_export      uvm_analysis_imp            -     @921 
+      get_ap               uvm_analysis_port           -     @911 
+      get_peek_export      uvm_get_peek_imp            -     @891 
+      put_ap               uvm_analysis_port           -     @901 
+      put_export           uvm_put_imp                 -     @881 
+    I2C_mon_in             uvm_analysis_export         -     @842 
+    UART_rx_fifo           uvm_tlm_analysis_fifo #(T)  -     @990 
+      analysis_export      uvm_analysis_imp            -     @1039
+      get_ap               uvm_analysis_port           -     @1029
+      get_peek_export      uvm_get_peek_imp            -     @1009
+      put_ap               uvm_analysis_port           -     @1019
+      put_export           uvm_put_imp                 -     @999 
+    UART_rx_in             uvm_analysis_export         -     @862 
+    UART_tx_fifo           uvm_tlm_analysis_fifo #(T)  -     @931 
+      analysis_export      uvm_analysis_imp            -     @980 
+      get_ap               uvm_analysis_port           -     @970 
+      get_peek_export      uvm_get_peek_imp            -     @950 
+      put_ap               uvm_analysis_port           -     @960 
+      put_export           uvm_put_imp                 -     @940 
+    UART_tx_in             uvm_analysis_export         -     @852 
+------------------------------------------------------------------
+
+Start Bit Detected .. 1562500/ top.top_design.d2.func_rx/ L24
+Data Received: 57 .. 10937490/ top.top_design.d2.func_rx/ L37
+Write to Internal Registers
+
+UVM_INFO ../testbench/scoreboard/scoreboard.sv(110) @ 11000000: uvm_test_top.scb_h [SCB] uart_tx_tr=-------------------------------------
+Name       Type           Size  Value
+-------------------------------------
+data_sent  UART_seq_item  -     @1117
+  data     integral       8     'h57 
+-------------------------------------
+
+UVM_INFO ../testbench/scoreboard/scoreboard.sv(123) @ 11000000: uvm_test_top.scb_h [scb] writing to internal registers
+Start Bit Detected .. 14062490/ top.top_design.d2.func_rx/ L24
+Data Received: 0 .. 23437490/ top.top_design.d2.func_rx/ L37
+Register Address: 0
+
+UVM_INFO ../testbench/scoreboard/scoreboard.sv(110) @ 23000000: uvm_test_top.scb_h [SCB] uart_tx_tr=-------------------------------------
+Name       Type           Size  Value
+-------------------------------------
+data_sent  UART_seq_item  -     @1121
+  data     integral       8     'h0  
+-------------------------------------
+
+Start Bit Detected .. 26562480/ top.top_design.d2.func_rx/ L24
+Data Received: 2 .. 35937480/ top.top_design.d2.func_rx/ L37
+BRGO Value: 2
+
+UVM_INFO ../testbench/scoreboard/scoreboard.sv(110) @ 36000000: uvm_test_top.scb_h [SCB] uart_tx_tr=-------------------------------------
+Name       Type           Size  Value
+-------------------------------------
+data_sent  UART_seq_item  -     @1135
+  data     integral       8     'h2  
+-------------------------------------
+
+Start Bit Detected .. 39062480/ top.top_design.d2.func_rx/ L24
+Data Received: 1 .. 48437470/ top.top_design.d2.func_rx/ L37
+Register Address: 1
+
+UVM_INFO ../testbench/scoreboard/scoreboard.sv(110) @ 48000000: uvm_test_top.scb_h [SCB] uart_tx_tr=-------------------------------------
+Name       Type           Size  Value
+-------------------------------------
+data_sent  UART_seq_item  -     @1146
+  data     integral       8     'h1  
+-------------------------------------
+
+Start Bit Detected .. 51562470/ top.top_design.d2.func_rx/ L24
+Data Received: ff .. 60937460/ top.top_design.d2.func_rx/ L37
+UVM_INFO ../testbench/scoreboard/scoreboard.sv(110) @ 61000000: uvm_test_top.scb_h [SCB] uart_tx_tr=-------------------------------------
+Name       Type           Size  Value
+-------------------------------------
+data_sent  UART_seq_item  -     @1157
+  data     integral       8     'hff 
+-------------------------------------
+
+Start Bit Detected .. 64062460/ top.top_design.d2.func_rx/ L24
+Data Received: 50 .. 73437450/ top.top_design.d2.func_rx/ L37
+BRG1 Value: ff
+
+UVM_INFO ../testbench/scoreboard/scoreboard.sv(110) @ 73000000: uvm_test_top.scb_h [SCB] uart_tx_tr=-------------------------------------
+Name       Type           Size  Value
+-------------------------------------
+data_sent  UART_seq_item  -     @1168
+  data     integral       8     'h50 
+-------------------------------------
+
+UVM_INFO ../testcases/ts.read_reg_test.sv(57) @ 75000000: uvm_test_top [read_reg_test] baud_rate=112.910043
+Start Bit Detected .. 206807410/ top.top_design.d2.func_rx/ L24
+Data Received: 52 .. 1003902130/ top.top_design.d2.func_rx/ L37
+Read Internal Registers
+
+Start Bit Detected .. 1269600370/ top.top_design.d2.func_rx/ L24
+Data Received: 0 .. 2066695090/ top.top_design.d2.func_rx/ L37
+Register Address: 0
+
+Start Bit Detected .. 2332393330/ top.top_design.d2.func_rx/ L24
+Data Received: 1 .. 3129488050/ top.top_design.d2.func_rx/ L37
+Register Address: 1
+
+Start Bit Detected .. 3395186290/ top.top_design.d2.func_rx/ L24
+Data Received: 50 .. 4192281010/ top.top_design.d2.func_rx/ L37
+Start Bit: 0 .. 4325130130/ top.top_design.d4.func_tx/ L108
+Stop Bit: 1 .. 5122224850/ top.top_design.d4.func_tx/ L117
+Start Bit: 0 .. 5387923090/ top.top_design.d4.func_tx/ L108
+Stop Bit: 1 .. 6185017810/ top.top_design.d4.func_tx/ L117
+UVM_INFO /home/016720418@SJSUAD.SJSU.EDU/uvm-1.2/src/base/uvm_objection.svh(1270) @ 14326000000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO /home/016720418@SJSUAD.SJSU.EDU/uvm-1.2/src/base/uvm_report_server.svh(847) @ 14326000000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   12
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[SCB]     6
+[TEST_DONE]     1
+[UVM/RELNOTES]     1
+[UVMTOP]     1
+[read_reg_test]     1
+[scb]     1
+
+$finish called from file "/home/016720418@SJSUAD.SJSU.EDU/uvm-1.2/src/base/uvm_root.svh", line 517.
+$finish at simulation time          14326173912
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 14326173912 ps
+CPU Time:      1.620 seconds;       Data structure size:   0.2Mb
+Tue Dec  6 18:44:16 2022
