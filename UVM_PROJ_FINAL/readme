@@ -1,6 +1,0 @@
-Project Team:4
-
-Andres Gamboa: UART_TX,UART_RX,UART BRIDGE FSM
-Karthik Bharadwaj Kunigal Raveendra: I2C FSM
-Mohanaram Krishnakumar: I2C FSM
-Juhi Patel: Testbench, testcases, intergration 
