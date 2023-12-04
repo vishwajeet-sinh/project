@@ -253,8 +253,8 @@ data_sent  UART_seq_item  -     @1339
 -------------------------------------
 
 UVM_INFO ../testbench/scoreboard/scoreboard.sv(192) @ 136000000: uvm_test_top.scb_h [CMP_PASS] received data and i2c packet data matching which is 49
-UVM_INFO /home/016720418@SJSUAD.SJSU.EDU/uvm-1.2/src/base/uvm_objection.svh(1270) @ 10113000000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
-UVM_INFO /home/016720418@SJSUAD.SJSU.EDU/uvm-1.2/src/base/uvm_report_server.svh(847) @ 10113000000: reporter [UVM/REPORT/SERVER] 
+UVM_INFO /home/016037567@SJSUAD.SJSU.EDU/uvm-1.2/src/base/uvm_objection.svh(1270) @ 10113000000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO /home/016037567@SJSUAD.SJSU.EDU/uvm-1.2/src/base/uvm_report_server.svh(847) @ 10113000000: reporter [UVM/REPORT/SERVER] 
 --- UVM Report Summary ---
 
 ** Report counts by severity
@@ -264,17 +264,15 @@ UVM_ERROR :    0
 UVM_FATAL :    0
 ** Report counts by id
 [CMP_PASS]     8
-[I2C_MON]    15
-[I2C_SL_DRI[0]]    13
 [RNTST]     1
 [SCB]    12
 [TEST_DONE]     1
 [UVM/RELNOTES]     1
 [UVMTOP]     1
 
-$finish called from file "/home/016720418@SJSUAD.SJSU.EDU/uvm-1.2/src/base/uvm_root.svh", line 517.
+$finish called from file "/home/016037567@SJSUAD.SJSU.EDU/uvm-1.2/src/base/uvm_root.svh", line 517.
 $finish at simulation time          10113255000
            V C S   S i m u l a t i o n   R e p o r t 
 Time: 10113255000 ps
 CPU Time:      1.190 seconds;       Data structure size:   0.2Mb
-Tue Dec  6 18:47:29 2022
+Mon Nov  6 18:47:29 2023
